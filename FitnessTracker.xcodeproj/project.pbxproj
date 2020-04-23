@@ -14,6 +14,9 @@
 		4D1072292450FA6F00E4A825 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1072282450FA6F00E4A825 /* Preview Assets.xcassets */; };
 		4D10722C2450FA6F00E4A825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D10722A2450FA6F00E4A825 /* LaunchScreen.storyboard */; };
 		4D1072382451052D00E4A825 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1072372451052D00E4A825 /* Food.swift */; };
+		4D10723A2451143600E4A825 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1072392451143600E4A825 /* FoodView.swift */; };
+		4D1072422451198200E4A825 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1072412451198200E4A825 /* HomeView.swift */; };
+		4D107246245124F300E4A825 /* MachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D107245245124F300E4A825 /* MachineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		4D10722B2450FA6F00E4A825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D10722D2450FA6F00E4A825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D1072372451052D00E4A825 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		4D1072392451143600E4A825 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		4D1072412451198200E4A825 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4D107245245124F300E4A825 /* MachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +68,13 @@
 				4D1072212450FA6B00E4A825 /* SceneDelegate.swift */,
 				4D1072372451052D00E4A825 /* Food.swift */,
 				4D1072232450FA6B00E4A825 /* ContentView.swift */,
+				4D1072392451143600E4A825 /* FoodView.swift */,
 				4D1072252450FA6F00E4A825 /* Assets.xcassets */,
 				4D10722A2450FA6F00E4A825 /* LaunchScreen.storyboard */,
 				4D10722D2450FA6F00E4A825 /* Info.plist */,
 				4D1072272450FA6F00E4A825 /* Preview Content */,
+				4D1072412451198200E4A825 /* HomeView.swift */,
+				4D107245245124F300E4A825 /* MachineView.swift */,
 			);
 			path = FitnessTracker;
 			sourceTree = "<group>";
@@ -149,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D107246245124F300E4A825 /* MachineView.swift in Sources */,
 				4D1072202450FA6B00E4A825 /* AppDelegate.swift in Sources */,
+				4D10723A2451143600E4A825 /* FoodView.swift in Sources */,
 				4D1072382451052D00E4A825 /* Food.swift in Sources */,
+				4D1072422451198200E4A825 /* HomeView.swift in Sources */,
 				4D1072222450FA6B00E4A825 /* SceneDelegate.swift in Sources */,
 				4D1072242450FA6B00E4A825 /* ContentView.swift in Sources */,
 			);
