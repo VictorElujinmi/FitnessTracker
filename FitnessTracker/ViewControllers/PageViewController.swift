@@ -15,7 +15,7 @@ import SwiftUI
 struct PageViewController: UIViewControllerRepresentable {
     
      var controllers: [UIViewController]
-     var currentPage: Int
+     var currentPage = 0
     
     // Conforms to UIViewControllerRepresentable protocal
     
@@ -29,7 +29,7 @@ struct PageViewController: UIViewControllerRepresentable {
         pageViewController.delegate = context.coordinator
         
         //Sets the background for each Controller
-        controllers.forEach({$0.view.backgroundColor = UIColor(named: "bgColor") })
+        controllers.forEach({$0.view.backgroundColor = .white })
         pageViewController.view.backgroundColor = UIColor(named: "bgColor")
         
         
@@ -112,6 +112,6 @@ struct PageViewController: UIViewControllerRepresentable {
 
 struct PageViewController_Previews: PreviewProvider {
     static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+        OnboardingView()
     }
 }

@@ -20,6 +20,7 @@
 		4D10724824513B3E00E4A825 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D10724724513B3E00E4A825 /* Person.swift */; };
 		4D10724E245212FA00E4A825 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D10724D245212FA00E4A825 /* OnboardingView.swift */; };
 		4D10725324521F5B00E4A825 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D10725224521F5B00E4A825 /* PageViewController.swift */; };
+		4D107255245295EA00E4A825 /* NavTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D107254245295EA00E4A825 /* NavTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +37,9 @@
 		4D1072412451198200E4A825 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4D107245245124F300E4A825 /* MachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineView.swift; sourceTree = "<group>"; };
 		4D10724724513B3E00E4A825 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		4D10724D245212FA00E4A825 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		4D10724D245212FA00E4A825 /* OnboardingView.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		4D10725224521F5B00E4A825 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		4D107254245295EA00E4A825 /* NavTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				4D1072392451143600E4A825 /* FoodView.swift */,
 				4D10724724513B3E00E4A825 /* Person.swift */,
 				4D10724D245212FA00E4A825 /* OnboardingView.swift */,
+				4D107254245295EA00E4A825 /* NavTest.swift */,
 				4D10725124521F3200E4A825 /* ViewControllers */,
 				4D1072252450FA6F00E4A825 /* Assets.xcassets */,
 				4D10722A2450FA6F00E4A825 /* LaunchScreen.storyboard */,
@@ -179,6 +182,7 @@
 				4D10725324521F5B00E4A825 /* PageViewController.swift in Sources */,
 				4D1072202450FA6B00E4A825 /* AppDelegate.swift in Sources */,
 				4D10723A2451143600E4A825 /* FoodView.swift in Sources */,
+				4D107255245295EA00E4A825 /* NavTest.swift in Sources */,
 				4D10724E245212FA00E4A825 /* OnboardingView.swift in Sources */,
 				4D1072382451052D00E4A825 /* Food.swift in Sources */,
 				4D1072422451198200E4A825 /* HomeView.swift in Sources */,

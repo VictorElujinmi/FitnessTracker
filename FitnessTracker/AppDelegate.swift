@@ -17,7 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //Checks if it the first launch since installation
-        let isFirstLaunch =  !UserDefaults.standard.bool(forKey: "isFirstLaunch")
+        
+        
+        
+        //For testing first launch
+        UserDefaults.standard.set(false, forKey: "isNotLaunch")
+        //end
+        
+        let isFirstLaunch =  !UserDefaults.standard.bool(forKey: "isNotLaunch")
         
         guard isFirstLaunch else {
             
@@ -26,10 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         //Function to set up app
-        print("Hello whats you name?")
-        UserDefaults.standard.set(true, forKey: "isFirstLaunch")
+        
+        UserDefaults.standard.set(true, forKey: "isNotLaunch")
         return true
     }
+    
 
     // MARK: UISceneSession Lifecycle
 
