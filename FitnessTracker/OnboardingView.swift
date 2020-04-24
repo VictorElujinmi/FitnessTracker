@@ -9,6 +9,19 @@
 import SwiftUI
 import Combine
 
+
+
+struct MainView: View {
+    var body: some View {
+        
+        NavigationView {
+            OnboardingView()
+        }
+    }
+}
+
+
+
 struct OnboardingView: View {
     @EnvironmentObject var env : MyAppEnvironmentData
     @State var currentPage = 0
@@ -77,31 +90,40 @@ struct PlanMealView: View {
 
 
 struct InformationView: View {
+    
+    @State var name: String = ""
+    @State var calorie: String = ""
+    @State var prt: String = ""
     @EnvironmentObject var env : MyAppEnvironmentData
     
     var body: some  View {
         
-        Button("Sign up") {
-             self.env.currentPage = .Menu
+        VStack {
+            
+            userQuery(label: "Name", msg: "Whats your name", quest: $name).keyboardType(.default)
+            userQuery(label: "Calorie Goal", msg: "Daily calorie goal", quest: $calorie)
+            userQuery(label: "Protien Goal", msg: "Daily Protien goal", quest: $prt)
+                
         }
+        .padding(.all)
+        
+            
     }
     
 }
 
-struct MainView: View {
-    var body: some View {
-        
-        NavigationView {
-            OnboardingView()
-        }
-    }
-}
+
+
+
+
 
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         
-        MainView().environmentObject(MyAppEnvironmentData())
+        //MainView().environmentObject(MyAppEnvironmentData())
+        InformationView()
+        
         
     }
 }
@@ -109,3 +131,20 @@ struct OnboardingView_Previews: PreviewProvider {
 
 
 
+
+struct userQuery: View {
+    
+    var label: String
+    var msg: String
+    @Binding var quest: String
+    var body: some View {
+        HStack {
+            Text("\(label) :")
+            TextField("\(msg)?", text: $quest)
+                .textContentType(.name)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.default)
+            
+        }
+    }
+}
