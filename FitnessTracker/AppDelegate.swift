@@ -21,20 +21,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //For testing first launch
-        UserDefaults.standard.set(false, forKey: "isNotLaunch")
+        //
         //end
         
-        let isFirstLaunch =  !UserDefaults.standard.bool(forKey: "isNotLaunch")
         
-        guard isFirstLaunch else {
+        // if no name exsists it will execute the gaurd statment
+        //If it is the first time launch then it will execute gaurd statement
+        guard UserDefaults.standard.string(forKey: UserData.name) == "test" else {
             
-            // Intial non first startup things
+            //  non-first launch things
+            
             return true
         }
         
         //Function to set up app
+        print(" First Launch Test ")
+        UserDefaults.standard.set(" ", forKey: UserData.name)
         
-        UserDefaults.standard.set(true, forKey: "isNotLaunch")
         return true
     }
     

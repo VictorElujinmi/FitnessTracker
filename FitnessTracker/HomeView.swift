@@ -10,7 +10,18 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home View")
+        VStack {
+            
+            Text("Home View")
+                
+            
+            Button ("Reset") {
+                UserDefaults.standard.set(nil, forKey: UserData.name)
+            }
+            .padding(.top)
+            
+        }
+    
     }
 }
 

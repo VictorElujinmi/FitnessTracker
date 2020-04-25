@@ -31,12 +31,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             
-            if (!UserDefaults.standard.bool(forKey: "isNotLaunch")) {
-            window.rootViewController = UIHostingController(rootView: contentView)
+            //if there is no data then this returns nil and it is the first time
+            if ((UserDefaults.standard.string(forKey: UserData.name)) ==  nil ) {
+            window.rootViewController = UIHostingController(rootView: mainView)
+                
                 
             } else {
                 
-              window.rootViewController = UIHostingController(rootView: mainView)
+              window.rootViewController = UIHostingController(rootView: contentView)
                 
             }
             

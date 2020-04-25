@@ -16,7 +16,7 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
             }
-            FoodView(calories: 1000.0, goal: 2000.0)
+            FoodView()
                     .tabItem {
                         Image(systemName: "heart")
                         Text("Meal")

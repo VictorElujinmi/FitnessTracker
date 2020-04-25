@@ -9,6 +9,15 @@
 import Foundation
 
 
+struct UserData {
+    
+    static var name = "userName"
+    static var cGoal = "cGoal"
+    static var prtGoal = "prtGoal"
+}
+
+
+
 class Person {
     
     private var name: String

@@ -59,8 +59,7 @@ struct ShareView: View {
             Button("Lets Go!") {
                 self.env.currentPage = .SecondPage
                 
-                }.frame(width: 100, height: 40, alignment: .center
-            )
+                }.frame(width: 100, height: 40, alignment: .center)
                 .padding(12.0)
                 .border(Color.black)         
         }
@@ -100,15 +99,28 @@ struct InformationView: View {
         
         VStack {
             
-            userQuery(label: "Name", msg: "Whats your name", quest: $name).keyboardType(.default)
-            userQuery(label: "Calorie Goal", msg: "Daily calorie goal", quest: $calorie)
-            userQuery(label: "Protien Goal", msg: "Daily Protien goal", quest: $prt)
+            userQuery(label: "Name", placeholder: "Whats your name", quest: $name)
+            userQuery(label: "Calorie Goal", placeholder: "Daily calorie goal", quest: $calorie).keyboardType(.decimalPad)
+            userQuery(label: "Protien Goal", placeholder: "Daily Protien goal", quest: $prt).keyboardType(.numberPad)
+           
+            //Will extract view to have reusable and same buttons
+            Button("Done") {
+                // Would do input Validiaiton here
+                UserDefaults.standard.set(self.name, forKey: UserData.name)
+                UserDefaults.standard.set(self.prt, forKey: UserData.prtGoal)
+                UserDefaults.standard.set(self.calorie, forKey: UserData.cGoal)
                 
+                print(UserDefaults.standard.string(forKey: UserData.name)! as String)
+                print(UserDefaults.standard.integer(forKey: UserData.cGoal) as Int)
+                print(UserDefaults.standard.integer(forKey: UserData.prtGoal) as Int)
+                
+            }
+            .frame(width: 100, height: 40)
+            .border(Color.black)
+            .padding(12.0)
         }
         .padding(.all)
-        
-            
-    }
+   }
     
 }
 
@@ -121,8 +133,8 @@ struct InformationView: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         
-        //MainView().environmentObject(MyAppEnvironmentData())
-        InformationView()
+        MainView().environmentObject(MyAppEnvironmentData())
+        //InformationView()
         
         
     }
@@ -135,15 +147,15 @@ struct OnboardingView_Previews: PreviewProvider {
 struct userQuery: View {
     
     var label: String
-    var msg: String
+    var placeholder: String
     @Binding var quest: String
     var body: some View {
         HStack {
             Text("\(label) :")
-            TextField("\(msg)?", text: $quest)
+            TextField("\(placeholder)?", text: $quest, onCommit: {print (self.quest)})
                 .textContentType(.name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .keyboardType(.default)
+                
             
         }
     }
