@@ -10,24 +10,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            HomeView()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-            }
-            FoodView()
-                    .tabItem {
-                        Image(systemName: "heart")
-                        Text("Meal")
-            }
-            MachineView()
-                .tabItem {
-                    Image(systemName: "burn")
-                    Text("Workout")
-                    
-            }
+        
+        
+        
+        VStack {
             
+            ProfileView()
+            TabView() {
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                }
+                FoodView()
+                        .tabItem {
+                            Image(systemName: "heart")
+                            Text("Meal")
+                }
+                MachineView()
+                    .tabItem {
+                        Image(systemName: "burn")
+                        Text("Workout")
+                        
+                }
+                
+            }
         }
         
     }

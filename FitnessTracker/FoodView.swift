@@ -8,10 +8,21 @@
 
 import SwiftUI
 
-//needs to be refactored into the cGaugeView
+
+
+
+
+
+
+
 struct FoodView: View {
     var body: some View {
+          
+        VStack {
         cGuageView(calories: 2000, goal: 3000)
+  
+        }
+        
     }
 }
 
@@ -36,9 +47,12 @@ struct cGuageView:  View {
         }
 }
 
+
 struct FoodView_Previews: PreviewProvider {
     static var previews: some View {
         
        FoodView()
     }
 }
+
+
