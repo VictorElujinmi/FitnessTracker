@@ -18,10 +18,17 @@ import SwiftUI
 struct FoodView: View {
     var body: some View {
           
-        VStack {
-        cGuageView(calories: 2000, goal: 3000)
+        
+        
   
-        }
+        ScrollView {
+        
+            VStack {
+            cGuageView(calories: 2000, goal: 3000)
+                cGuageView(calories: 2000, goal: 3000)
+                cGuageView(calories: 2000, goal: 3000)
+            }
+        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         
     }
 }
@@ -36,6 +43,7 @@ struct cGuageView:  View {
                     .stroke(Color.gray, style: StrokeStyle(lineWidth: 25.0))
                     .frame(width: 150, height:150)
                     .rotationEffect(Angle(degrees: -205))
+                    .padding()
                 
                 Circle()
                     .trim(from: 0.0, to: (calories/goal) * 0.65)
