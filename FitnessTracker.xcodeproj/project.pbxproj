@@ -22,6 +22,7 @@
 		4D10725324521F5B00E4A825 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D10725224521F5B00E4A825 /* PageViewController.swift */; };
 		4D107255245295EA00E4A825 /* NavTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D107254245295EA00E4A825 /* NavTest.swift */; };
 		4D3F5AE32454BA86003D4C59 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3F5AE22454BA86003D4C59 /* ProfileView.swift */; };
+		D96C86BC245C02CA00FA90BE /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C86BB245C02CA00FA90BE /* Machine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		4D10725224521F5B00E4A825 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		4D107254245295EA00E4A825 /* NavTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTest.swift; sourceTree = "<group>"; };
 		4D3F5AE22454BA86003D4C59 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D96C86BB245C02CA00FA90BE /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				4D1072392451143600E4A825 /* FoodView.swift */,
 				4D1072232450FA6B00E4A825 /* ContentView.swift */,
 				4D1072412451198200E4A825 /* HomeView.swift */,
+				D96C86BB245C02CA00FA90BE /* Machine.swift */,
 				4D107245245124F300E4A825 /* MachineView.swift */,
 				4D10724724513B3E00E4A825 /* Person.swift */,
 				4D10724D245212FA00E4A825 /* OnboardingView.swift */,
@@ -189,6 +192,7 @@
 				4D107255245295EA00E4A825 /* NavTest.swift in Sources */,
 				4D10724E245212FA00E4A825 /* OnboardingView.swift in Sources */,
 				4D1072382451052D00E4A825 /* Food.swift in Sources */,
+				D96C86BC245C02CA00FA90BE /* Machine.swift in Sources */,
 				4D1072422451198200E4A825 /* HomeView.swift in Sources */,
 				4D1072222450FA6B00E4A825 /* SceneDelegate.swift in Sources */,
 				4D10724824513B3E00E4A825 /* Person.swift in Sources */,
