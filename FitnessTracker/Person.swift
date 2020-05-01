@@ -13,7 +13,9 @@ struct UserData {
     
     static var name = "userName"
     static var cGoal = "cGoal"
-    static var prtGoal = "prtGoal"
+    static var prtGoal = "prtGoal" //protien goal
+    static var bGoal = "bGoal" //how many calories user wants to burn
+    
 }
 
 
@@ -23,6 +25,7 @@ class Person {
     private var name: String
     private var calorieGoal: Int
     private var prt: Int
+    private var burnGoal: Int
     
     
     init (name: String) {
@@ -30,6 +33,7 @@ class Person {
         self.name = name
         calorieGoal = 0
         prt = 0
+        burnGoal = 0
         
     }
     
@@ -58,4 +62,17 @@ class Person {
          self.prt = prt
     }
     
+    /**
+     This method takes in the users desired calorie burn goal and sets the instance vairable
+     */
+    func setBurnGoal(burnGoal: Int) {
+        self.burnGoal = burnGoal
+    }
+    
+    /**
+     This method returns teh users desired calorie burn so it can be used in other classes
+     */
+    func getBurnGoal() -> Int {
+        return self.burnGoal
+    }
 }

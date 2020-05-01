@@ -93,6 +93,7 @@ struct InformationView: View {
     @State var name: String = ""
     @State var calorie: String = ""
     @State var prt: String = ""
+    @State var burnGoal: String = ""
     @EnvironmentObject var env : MyAppEnvironmentData
     
     var body: some  View {
@@ -102,6 +103,7 @@ struct InformationView: View {
             userQuery(label: "Name", placeholder: "Whats your name", quest: $name)
             userQuery(label: "Calorie Goal", placeholder: "Daily calorie goal", quest: $calorie).keyboardType(.decimalPad)
             userQuery(label: "Protien Goal", placeholder: "Daily Protien goal", quest: $prt).keyboardType(.numberPad)
+             userQuery(label: "Calorie Deficit Goal", placeholder: "Daily Deficit goal", quest: $burnGoal).keyboardType(.numberPad)
            
             //Will extract view to have reusable and same buttons
             Button("Done") {
@@ -109,10 +111,12 @@ struct InformationView: View {
                 UserDefaults.standard.set(self.name, forKey: UserData.name)
                 UserDefaults.standard.set(self.prt, forKey: UserData.prtGoal)
                 UserDefaults.standard.set(self.calorie, forKey: UserData.cGoal)
+                UserDefaults.standard.set(self.burnGoal, forKey: UserData.bGoal)
                 
                 print(UserDefaults.standard.string(forKey: UserData.name)! as String)
                 print(UserDefaults.standard.integer(forKey: UserData.cGoal) as Int)
                 print(UserDefaults.standard.integer(forKey: UserData.prtGoal) as Int)
+                print(UserDefaults.standard.integer(forKey: UserData.bGoal) as Int)
                 
             }
             .frame(width: 100, height: 40)
