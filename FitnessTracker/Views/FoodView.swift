@@ -12,17 +12,12 @@ import UIKit
 struct FoodView: View {
     
     var body: some View {
-        
-        
-        
         NavigationView {
             ScrollView {
                 
                 cGuageView(calories: 2000, goal: 3000)
                 
                 VStack {
-                    
-                    
                     NavigationLink (destination: OnboardingView()) {
                         AddMealView()
                     }.border(Color.black)
