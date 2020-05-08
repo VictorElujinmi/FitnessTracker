@@ -11,12 +11,40 @@ import SwiftUI
 struct MealListView: View {
     var body: some View {
         
+        
+        
+    
         List {
             
-        Text("Sampe Meal")
+       MealItem()
+            
             
         }.navigationBarTitle("My Meals")
         
+    }
+}
+
+
+struct MealItem: View {
+   // var Meal: Meal
+    var body: some View {
+        
+        VStack(alignment: .leading) {
+            HStack {
+                Image(systemName: "star.fill").frame(width: 100, height: 100, alignment: .leading)
+                
+                VStack(alignment: .leading, spacing: 5) {
+                    Text("Name: Sample")
+                    Text("Caloire Count: ####")
+                    Text("Protein Count: ####")
+                }
+            }
+            Text("Add Button")
+                .padding(.leading, 250.0)
+                .frame( alignment: .bottomTrailing)
+                
+        }
+       
     }
 }
 
