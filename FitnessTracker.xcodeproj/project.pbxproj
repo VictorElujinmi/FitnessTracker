@@ -76,19 +76,14 @@
 		4D10721E2450FA6B00E4A825 /* FitnessTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4D17C60A2465F46A00F31DE7 /* Views */,
+				4D17C6092465F45500F31DE7 /* MachineFiles */,
+				4D17C6082465F42A00F31DE7 /* FoodFiles */,
+				4D10725124521F3200E4A825 /* ViewControllers */,
 				4D10721F2450FA6B00E4A825 /* AppDelegate.swift */,
 				4D1072212450FA6B00E4A825 /* SceneDelegate.swift */,
-				4D1072372451052D00E4A825 /* Food.swift */,
-				4D1072392451143600E4A825 /* FoodView.swift */,
-				4D1072232450FA6B00E4A825 /* ContentView.swift */,
-				4D1072412451198200E4A825 /* HomeView.swift */,
-				D96C86BB245C02CA00FA90BE /* Machine.swift */,
-				4D107245245124F300E4A825 /* MachineView.swift */,
-				4D10724724513B3E00E4A825 /* Person.swift */,
-				4D10724D245212FA00E4A825 /* OnboardingView.swift */,
 				4D107254245295EA00E4A825 /* NavTest.swift */,
-				4D3F5AE22454BA86003D4C59 /* ProfileView.swift */,
-				4D10725124521F3200E4A825 /* ViewControllers */,
+				4D17C60B2465F4F100F31DE7 /* DataObjects */,
 				4D1072252450FA6F00E4A825 /* Assets.xcassets */,
 				4D10722A2450FA6F00E4A825 /* LaunchScreen.storyboard */,
 				4D10722D2450FA6F00E4A825 /* Info.plist */,
@@ -111,6 +106,43 @@
 				4D10725224521F5B00E4A825 /* PageViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4D17C6082465F42A00F31DE7 /* FoodFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4D1072372451052D00E4A825 /* Food.swift */,
+			);
+			path = FoodFiles;
+			sourceTree = "<group>";
+		};
+		4D17C6092465F45500F31DE7 /* MachineFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4D107245245124F300E4A825 /* MachineView.swift */,
+			);
+			path = MachineFiles;
+			sourceTree = "<group>";
+		};
+		4D17C60A2465F46A00F31DE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D10724D245212FA00E4A825 /* OnboardingView.swift */,
+				4D3F5AE22454BA86003D4C59 /* ProfileView.swift */,
+				4D1072412451198200E4A825 /* HomeView.swift */,
+				4D1072232450FA6B00E4A825 /* ContentView.swift */,
+				4D1072392451143600E4A825 /* FoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D17C60B2465F4F100F31DE7 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				D96C86BB245C02CA00FA90BE /* Machine.swift */,
+				4D10724724513B3E00E4A825 /* Person.swift */,
+			);
+			path = DataObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
