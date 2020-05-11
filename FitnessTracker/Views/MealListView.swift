@@ -18,18 +18,13 @@ struct MealListView: View {
         
     //FetchRequest
         
-        NavigationView {
-            List {
+        ScrollView {
+            
       
                 ForEach(meals) { meal in
                     MealItem(mealName: meal.name!, mealCal: meal.prtCount, mealPrt: meal.calorieCount)
-                    }.onDelete { indexSet in
-                        for index in indexSet {
-                            self.managedObjectContext.delete(self.meals[index])
-                        }
                     }
-                
-        }.navigationBarTitle("My Meals")
+        .navigationBarTitle("My Meals")
         .navigationBarItems(trailing: Button(action: {
         self.showAddSheet = true
                     }, label: {

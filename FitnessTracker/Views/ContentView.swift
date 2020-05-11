@@ -12,10 +12,10 @@ struct ContentView: View {
     var body: some View {
         
         
-        
+         NavigationView() {
         VStack {
             
-            NavigationView() {
+           
             TabView() {
                 HomeView()
                     .tabItem {
@@ -35,7 +35,7 @@ struct ContentView: View {
                 }
                 
             }
-        }
+        }.navigationBarItems(leading: ProfileView())
         
     }
     
