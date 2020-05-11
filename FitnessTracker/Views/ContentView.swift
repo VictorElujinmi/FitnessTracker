@@ -15,7 +15,7 @@ struct ContentView: View {
         
         VStack {
             
-          //  ProfileView()
+            NavigationView() {
             TabView() {
                 HomeView()
                     .tabItem {
@@ -39,6 +39,7 @@ struct ContentView: View {
         
     }
     
+}
 }
 
 

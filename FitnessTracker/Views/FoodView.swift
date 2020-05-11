@@ -12,7 +12,6 @@ import UIKit
 struct FoodView: View {
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 
                 cGuageView(calories: 2000, goal: 3000)
@@ -28,7 +27,7 @@ struct FoodView: View {
         }
         
     }
-}
+
 
 struct cGuageView:  View {
     @State var calories: Int
