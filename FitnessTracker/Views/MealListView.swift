@@ -23,6 +23,10 @@ struct MealListView: View {
       
                 ForEach(meals) { meal in
                     MealItem(mealName: meal.name!, mealCal: meal.prtCount, mealPrt: meal.calorieCount)
+                    }.onDelete { indexSet in
+                        for index in indexSet {
+                            self.managedObjectContext.delete(self.meals[index])
+                        }
                     }
                 
         }.navigationBarTitle("My Meals")
@@ -54,7 +58,7 @@ struct MealItem: View {
     
     var body: some View {
        
-        VStack(alignment: .leading) {
+       return VStack(alignment: .leading) {
             HStack {
                 Image(systemName: "star.fill").frame(width: 100, height: 100).border(Color.black)
                 
