@@ -15,7 +15,7 @@ struct ContentView: View {
         
         VStack {
             
-            ProfileView()
+          //  ProfileView()
             TabView() {
                 HomeView()
                     .tabItem {
