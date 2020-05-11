@@ -63,10 +63,25 @@ struct MealItem: View {
                     Text("Protein Count: \(mealPrt)")
                 }
             }
-            Image(systemName: "plus.circle").padding(.leading, 310.0).font(.system(size: 32))
-                
+        Button(action: {
+            self.upDateData(caloire: self.mealCal, prt: self.mealPrt)
+        }) {
+            Image(systemName: "plus.circle").padding(.leading, 300.0).font(.system(size: 32))
+        }
         }
        
+    }
+    func upDateData(caloire: Int16, prt: Int16 ) {
+        
+        var cTotal = caloire
+        var prtTotal = prt
+        
+        cTotal += UserData.getCTotal
+        prtTotal += UserData.getPrtToatl
+        
+        UserDefaults.standard.set(cTotal, forKey: UserData.cTotal)
+        UserDefaults.standard.set(prtTotal, forKey: UserData.prtTotal)
+     
     }
 }
 

@@ -15,6 +15,10 @@ struct UserData {
     static var cGoal = "cGoal"
     static var prtGoal = "prtGoal" //protien goal
     static var bGoal = "bGoal" //how many calories user wants to burn
+    static var cTotal = "cTotal" // Current Amount of Calories
+    static var prtTotal = "prtTotal"
+    static var getCTotal = Int16(UserDefaults.standard.integer(forKey: UserData.cTotal))
+    static var getPrtToatl = Int16(UserDefaults.standard.integer(forKey: UserData.prtTotal))
     
 }
 

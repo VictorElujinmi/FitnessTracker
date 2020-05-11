@@ -99,11 +99,10 @@ struct InformationView: View {
     var body: some  View {
         
         VStack {
-            
             userQuery(label: "Name", placeholder: "Whats your name", quest: $name)
             userQuery(label: "Calorie Goal", placeholder: "Daily calorie goal", quest: $calorie).keyboardType(.decimalPad)
             userQuery(label: "Protien Goal", placeholder: "Daily Protien goal", quest: $prt).keyboardType(.numberPad)
-             userQuery(label: "Calorie Deficit Goal", placeholder: "Daily Deficit goal", quest: $burnGoal).keyboardType(.numberPad)
+            userQuery(label: "Calorie Deficit Goal", placeholder: "Daily Deficit goal", quest: $burnGoal).keyboardType(.numberPad)
            
             //Will extract view to have reusable and same buttons
             Button("Done") {
@@ -112,6 +111,8 @@ struct InformationView: View {
                 UserDefaults.standard.set(self.prt, forKey: UserData.prtGoal)
                 UserDefaults.standard.set(self.calorie, forKey: UserData.cGoal)
                 UserDefaults.standard.set(self.burnGoal, forKey: UserData.bGoal)
+                UserDefaults.standard.set(0, forKey: UserData.cTotal)
+                UserDefaults.standard.set(0, forKey: UserData.prtTotal)
                 
                 print(UserDefaults.standard.string(forKey: UserData.name)! as String)
                 print(UserDefaults.standard.integer(forKey: UserData.cGoal) as Int)
