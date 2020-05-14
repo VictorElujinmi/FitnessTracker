@@ -7,50 +7,56 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct MachineView: View {
     var body: some View {
-        
-       VStack {
-        
-        HStack { //stacking the buttons side by side
-            Button(action: {}) {
-            Text("Cardio")
-                .foregroundColor(Color.black)
-            
+        HStack {
+            NavigationLink (destination: CardioView()) {
+                AddCardioView()
                 
-        }
-        .padding(10)
-        .border(Color.purple)
-        .position(.init(x: 63, y: 45))
-       
-        Button(action: {}) {
-            Text("Strength")
-                .foregroundColor(Color.black)
-                .padding()
-         }
-         .padding(10)
-        .border(Color.orange)
-        .position(.init(x: 63, y: 45))
-      
-       
-        Button(action: {}) {
-            Text("Body")
-                .foregroundColor(Color.black)
-         }
-         .padding(10)
-        .border(Color.green)
-            .position(.init(x: 63, y: 45))
-        
-        }
-        
-        
-        Text("Machine View")
-        
+            }.border(Color.black)
             
+            NavigationLink (destination: WorkoutView() ) {
+                AddWorkoutView()
+                
+            }.border(Color.black)
         }
     }
 }
+
+
+struct  AddCardioView: View {
+    
+    var body: some View {
+        
+        
+        HStack {
+            
+            Text("Add Cardio")
+            
+            
+        }.frame(width:150, height:150)
+        
+    }
+}
+
+
+struct  AddWorkoutView: View {
+    
+    var body: some View {
+        
+        
+        HStack {
+            
+            Text("Add Workout")
+            
+            
+        }.frame(width:150, height:150)
+        
+    }
+}
+
 
 struct MachineView_Previews: PreviewProvider {
     static var previews: some View {
