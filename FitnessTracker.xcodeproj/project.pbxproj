@@ -126,7 +126,8 @@
 		4D17C6082465F42A00F31DE7 /* FoodFiles */ = {
 			isa = PBXGroup;
 			children = (
-				4D1072372451052D00E4A825 /* Food.swift */,
+				4D1072392451143600E4A825 /* FoodView.swift */,
+				4D17C6132465FBC800F31DE7 /* MealListView.swift */,
 			);
 			path = FoodFiles;
 			sourceTree = "<group>";
@@ -134,8 +135,8 @@
 		4D17C6092465F45500F31DE7 /* MachineFiles */ = {
 			isa = PBXGroup;
 			children = (
-				4D107245245124F300E4A825 /* MachineView.swift */,
 				D92C2EE2246CEE3000705A90 /* CardioView.swift */,
+				4D107245245124F300E4A825 /* MachineView.swift */,
 				D92C2EE0246CED9100705A90 /* WorkoutView.swift */,
 			);
 			path = MachineFiles;
@@ -148,8 +149,6 @@
 				4D3F5AE22454BA86003D4C59 /* ProfileView.swift */,
 				4D1072412451198200E4A825 /* HomeView.swift */,
 				4D1072232450FA6B00E4A825 /* ContentView.swift */,
-				4D1072392451143600E4A825 /* FoodView.swift */,
-				4D17C6132465FBC800F31DE7 /* MealListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D96C86BB245C02CA00FA90BE /* Machine.swift */,
+				4D1072372451052D00E4A825 /* Food.swift */,
 				4D10724724513B3E00E4A825 /* Person.swift */,
 			);
 			path = DataObjects;
